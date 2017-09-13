@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.donute.tencenthelper.views.SquareImageView
+        android:padding="5dp"
+        android:id="@+id/header_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/header_iv"
+            android:id="@+id/nick_name_tv"
+            android:text="121212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/header_iv"
+            app:layout_constraintTop_toBottomOf="@+id/nick_name_tv"
+            android:id="@+id/signature_tv"
+            android:text="121212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="121"
+            android:id="@+id/chat_time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
